@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Add Bootstrap JavaScript (along with Popper.js and jQuery) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e8e4c9;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><h2>E-Commerce</h2></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="btn btn-light mr-3" aria-current="page" href="#">Categories</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mr-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Settings
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item " href="#">Profile Settings</a>
+                      <a class="dropdown-item" href="#">Privacy Settings</a>
+                      <a class="dropdown-item" href="#">Help & Support</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button type="button" class="btn btn-primary position-relative mr-3">
+                        Profile
+                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                          <span class="visually-hidden">New alerts</span>
+                        </span>
+                      </button>
+
+                  <button type="button" class="btn btn-info position-relative">
+                    Cart
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      2
+                      <span class="visually-hidden">Item count</span>
+                    </span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="container mt-3" id="containerLogin">
+        <label><h3>Login</h3></label>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <button type="button" class="btn btn-primary mt-2">Login</button>
+          <a type="button" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+          <a href="#" class="text-decoration-underline">Forgot password?</a>
+ 
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create account</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email Address</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                        <label for="floatingInput">Name</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Confirm Password</label>
+                      </div>
+                      <div class="container mt-3">
+                      <div class="mt-2 row">
+                        <label for="radioGender">Gender</label>
+                        <div class="form-check col-4">
+                          <input class="form-check-input" type="radio" name="radioGender" id="flexRadioDefault1" checked>
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                          </label>
+                        </div>
+                        <div class="form-check col-4">
+                          <input class="form-check-input" type="radio" name="radioGender" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Female
+                          </label>
+                        </div>
+                        <div class="form-check col-4">
+                          <input class="form-check-input" type="radio" name="radioGender" id="flexRadioDefault2">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Rather not say
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <div class="form-floating">
+                      <select id="floatingSelect" class="form-select" aria-label="Default select example">
+                        <option selected>Select Age</option>
+                        <option value="1">13yr - 19yr</option>
+                        <option value="2">20yr - 29yr</option>
+                        <option value="3">30yr - 39yr</option>
+                        <option value="4">40yr - 49yr</option>
+                        <option value="5">50yr - 59yr</option>
+                        <option value="6">60yr - 69yr</option>
+                        <option value="7">70yr - 79yr</option>
+                      </select>
+                      <label for="floatingSelect">Age</label>
+                      </div>
+                  </div>
+                  <div class="mt-3">
+                    <div class="input-group">
+                      <span class="input-group-text">Address</span>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <div class="form-floating mb-3">
+                      <input type="date" class="form-control" id="floatingDate" placeholder="Birthdate">
+                      <label for="floatingDate">Birthdate</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Register</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!--reminder mr-3 for spacings-->

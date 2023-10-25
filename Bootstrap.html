@@ -35,6 +35,52 @@
                   <li class="nav-item">
                     <a class="btn btn-light mr-3" aria-current="page" href="#">Categories</a>
                   </li>
+                  <!--Add Product-->
+                  <li>
+                     <button type="button" class="btn btn-light mr-3" data-toggle="modal" data-target="#productModal">
+                        Add Product
+                      </button>
+                      <div class="modal" id="productModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+
+                            <div class="modal-header">
+                              <h3 class="modal-title">Add Product</h3>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+          
+                            <div class="modal-body">
+                             
+                              <form>
+                                <div class="form-group">
+                                  <input type="text" 
+                                  placeholder="Product Name" class="form-control" id="productName">
+                                </div>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1">Description</span>
+                                  <input type="text" class="form-control" aria-label="Description" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">$</span>
+                                  <input type="text" class="form-control"
+                                  placeholder="Price" aria-label="Amount (to the nearest dollar)">
+                                  <span class="input-group-text">.00</span>
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label" for="customFile">Product Image</label>
+                                  <input type="file" class="form-control" id="customFile" />
+                                  </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-success">Add Product</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+                  <!--End of Add product-->
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle mr-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Settings
@@ -43,6 +89,7 @@
                       <a class="dropdown-item " href="#">Profile Settings</a>
                       <a class="dropdown-item" href="#">Privacy Settings</a>
                       <a class="dropdown-item" href="#">Help & Support</a>
+                     
                     </div>
                   </li>
                   <li class="nav-item">
@@ -186,7 +233,7 @@
       <div class="row">
           <div class="col-md-4">
               <div class="card">
-                  <img src="GMMK pro.jpg" class="card-img-top" alt="Product 1" height="220">
+                  <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT6Y-xPfFcwdbvfK3P_6rtBYHgjk_5Hqan7pMjbRnyS_0Q2LKBfKO-WbA8Pc2TD7Wcx-Vp8WtF3YFywcQad_Chj8XyAYSYmDaA6cLFdPMfwyIcl2l2DXxCINw&usqp=CAE" class="card-img-top" alt="Product 1" height="220">
                   <div class="card-body">
                       <h5 class="card-title">Glorious GMMK Pro Prebuilt</h5>
                       <p class="fw-normal">Modular Mechanical Keyboard Pro, ANSI/USA Layout, Fox Linear Switch, GPBT White Keycaps, Gasket Mounted Prebuilt Premium RGB 75% Keyboard, Black | GLO-GMMK-P75-FOX-B</p>
@@ -199,7 +246,7 @@
 
           <div class="col-md-4">
               <div class="card">
-                  <img src="monsgeek M1W.jpg" class="card-img-top" alt="Product 2" height="220">
+                  <img src="https://thekey.company/cdn/shop/products/M1Website-13_d5068d92-d52a-4620-9bdd-6964ce80f169.jpg?v=1686858405" class="card-img-top" alt="Product 2" height="220">
                   <div class="card-body">
                       <h5 class="card-title">MonsGeek M1W Keyboard [V3 Piano Pro Switch]</h5>
                       <p class="fw-normal">75% 82-Key Layout with Knob
@@ -215,7 +262,7 @@
 
           <div class="col-md-4">
               <div class="card">
-                  <img src="Machenike KT68.jpg" class="card-img-top" alt="Product 2" height="220">
+                  <img src="https://ksr-ugc.imgix.net/assets/039/492/602/ce8564182eaa413b7f6ad748a7df593c_original.jpg?ixlib=rb-4.1.0&crop=faces&w=1552&h=873&fit=crop&v=1671435683&auto=format&frame=1&q=92&s=b4d8af213e3f74706950ce39561cc696" class="card-img-top" alt="Product 2" height="220">
                   <div class="card-body">
                       <h5 class="card-title">Machenike KT68 Pro</h5>
                       <p class="fw-normal">Smart Screen Hot-Swap Mechanical Keyboard,

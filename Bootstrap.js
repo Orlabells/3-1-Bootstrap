@@ -54,3 +54,8 @@ function registerUser() {
 btnRegister.onclick = () => {
     registerUser();
 };
+
+function navigatebootstrap() {
+
+    window.location.href = "Bootstrap.html";
+  };
